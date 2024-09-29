@@ -1,4 +1,8 @@
 export default {
+  baseURL: "/aravinda/",
+  buildAssetsDir: "assets",
+  ssr: false,
+
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxtjs/apollo",

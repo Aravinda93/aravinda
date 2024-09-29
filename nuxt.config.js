@@ -43,17 +43,5 @@ export default {
     },
   ],
 
-  turnstile: {
-    siteKey: "0x4AAAAAAAUBxBNAPgRBo5hj",
-  },
-
-  apollo: {
-    clients: {
-      default: {
-        httpEndpoint: "https://cms.mihai.ltd/graphql",
-      },
-    },
-  },
-
   compatibilityDate: "2024-09-26",
 };

@@ -30,7 +30,7 @@
           to="/experience"
           active-class="text-yellow-400"
         >
-          Work Experience
+          Experience
           <span
             class="absolute left-0 bottom-0 w-full h-1 bg-yellow-400 scale-x-0 group-hover:scale-x-100 transform origin-left transition-transform duration-500 ease-in-out"
           ></span>

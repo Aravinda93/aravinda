@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col py-10 px-6 space-y-8 items-center justify-center">
     <JobExperience
-      :companyLogo="'/images/benelog.svg'"
+      :companyLogo="'images/benelog.svg'"
       :companyName="'benelog GmbH & Co. KG'"
       :duration="'Dec 2020 – Current'"
       :city="'Kerpen'"
@@ -11,7 +11,7 @@
     />
 
     <JobExperience
-      :companyLogo="'/images/gs1.svg'"
+      :companyLogo="'images/gs1.svg'"
       :companyName="'GS1 Germany'"
       :duration="'Jun 2020 – Nov 2020'"
       :city="'Köln'"
@@ -21,7 +21,7 @@
     />
 
     <JobExperience
-      :companyLogo="'/images/Johnson_and_Johnson_Logo.svg'"
+      :companyLogo="'images/Johnson_and_Johnson_Logo.svg'"
       :companyName="'Johnson & Johnson (Previously Surgical Process Institute)'"
       :duration="'Mar 2019 – May 2020'"
       :city="'Chemnitz'"
@@ -31,7 +31,7 @@
     />
 
     <JobExperience
-      :companyLogo="'/images/Oracle_Cerner_logo.svg'"
+      :companyLogo="'images/Oracle_Cerner_logo.svg'"
       :companyName="'Oracle Cerner (Previously Cerner Corporation)'"
       :duration="'Jun 2016 – Sep 2018'"
       :city="'Bangalore'"
@@ -41,7 +41,7 @@
     />
 
     <JobExperience
-      :companyLogo="'/images/UST_Logo.png'"
+      :companyLogo="'images/UST_Logo.png'"
       :companyName="'UST Global'"
       :duration="'Apr 2015 – Jun 2016'"
       :city="'Kochi'"

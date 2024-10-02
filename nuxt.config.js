@@ -1,17 +1,19 @@
 export default {
-  baseURL: "/aravinda/",
-  buildAssetsDir: "assets",
-  ssr: false,
+  app: {
+    baseURL: "/aravinda/",
+  },
+  ssr: true,
+  target: "static",
+  compatibilityDate: "2024-10-01",
 
   modules: [
     "@nuxtjs/tailwindcss",
-    "@nuxtjs/apollo",
-    "@nuxtjs/turnstile",
     "unplugin-fonts/nuxt",
+    "@nuxt/icon",
+    "@nuxtjs/i18n",
     "@nuxtjs/color-mode",
+    "@nuxtjs/turnstile",
   ],
-
-  css: ["@/assets/index.css"],
 
   //To support the dark/light mode theme using @nuxtjs/color-mode
   colorMode: {
@@ -20,12 +22,14 @@ export default {
     fallback: "dark",
   },
 
+  // Favicon icon for the tab
   app: {
     head: {
       link: [
         {
           rel: "icon",
           type: "image/x-icon",
+          href: `/images/photo.jpg`,
         },
       ],
     },
@@ -46,6 +50,4 @@ export default {
       pathPrefix: false,
     },
   ],
-
-  compatibilityDate: "2024-09-26",
 };

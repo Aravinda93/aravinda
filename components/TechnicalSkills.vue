@@ -1,30 +1,32 @@
 <template>
   <div
-    class="group relative flex flex-col items-center justify-center px-4 py-6 rounded-xl bg-white bg-opacity-20 backdrop-blur-lg shadow-lg dark:bg-gray-800 dark:bg-opacity-20 transition-transform duration-500 ease-in-out transform hover:scale-125 hover:shadow-2xl hover:z-40"
+    class="group relative flex flex-col items-center justify-center p-6 rounded-xl bg-white/50 dark:bg-gray-900/50 backdrop-blur-lg shadow-lg dark:shadow-xl transition-transform duration-500 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:z-40 hover:text-red-500"
   >
-    <Icon
-      v-if="icon"
-      :icon="icon"
-      class="w-12 h-12 text-gray-800 dark:text-gray-200 transition-colors duration-500"
-    />
+    <!-- Icon or empty div for spacing -->
+    <div v-if="icon" class="w-12 h-12">
+      <Icon
+        :name="icon"
+        class="w-full h-full text-gray-700 dark:text-yellow-200 transition-colors duration-500"
+      />
+    </div>
+    <div v-else class="h-0"></div>
 
+    <!-- Skill text -->
     <span
       :class="icon ? 'mt-4' : ''"
-      class="text-lg font-semibold text-gray-800 dark:text-gray-200 transition-colors duration-500"
+      class="text-center text-lg font-semibold text-gray-900 dark:text-yellow-100 transition-colors duration-500"
     >
       {{ text }}
     </span>
 
-    <!-- Floating animation effect -->
+    <!-- Gradient floating effect -->
     <div
-      class="absolute inset-0 z-[-1] w-full h-full rounded-xl bg-gradient-to-r opacity-0 blur-lg group-hover:opacity-80 transition-opacity duration-700"
+      class="absolute inset-0 z-[-1] w-full h-full rounded-xl bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 opacity-0 group-hover:opacity-90 transition-opacity duration-700 blur-md"
     />
   </div>
 </template>
 
 <script setup>
-import { Icon } from "@iconify/vue";
-
 const props = defineProps({
   icon: {
     type: String,

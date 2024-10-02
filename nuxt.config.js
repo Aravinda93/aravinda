@@ -3,6 +3,9 @@ export default {
     baseURL: "/aravinda/",
     buildAssetsDir: "assets",
   },
+  router: {
+    base: "/aravinda/",
+  },
   ssr: true,
   target: "static",
   compatibilityDate: "2024-10-01",

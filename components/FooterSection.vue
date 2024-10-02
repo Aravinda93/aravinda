@@ -59,7 +59,7 @@
         >
           <div class="py-2">
             <a
-              href="/CV_DE.pdf"
+              href="CV_DE.pdf"
               target="_blank"
               @click="toggleOptionsMenu"
               class="flex items-center px-4 py-2 space-x-2 hover:bg-gray-100 dark:hover:bg-slate-700 cursor-pointer"
@@ -71,7 +71,7 @@
             <hr class="border-gray-300 dark:border-slate-700" />
 
             <a
-              href="/CV_EN.pdf"
+              href="CV_EN.pdf"
               target="_blank"
               @click="toggleOptionsMenu"
               class="flex items-center px-4 py-2 space-x-2 hover:bg-gray-100 dark:hover:bg-slate-700 cursor-pointer"

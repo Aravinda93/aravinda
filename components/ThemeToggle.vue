@@ -4,7 +4,6 @@
     @click="changeColor"
     class="p-2 rounded-full transition duration-300 ease-in-out transform hover:scale-105 hover:ring-2 ring-gray-400 dark:ring-yellow-500 bg-transparent text-blue-900 dark:text-blue-100"
   >
-    {{ colorMode.preference }}
     <ColorScheme>
       <Icon
         :name="icon"

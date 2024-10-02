@@ -1,6 +1,7 @@
 export default {
   app: {
     baseURL: "/aravinda/",
+    buildAssetsDir: "assets",
   },
   ssr: true,
   target: "static",

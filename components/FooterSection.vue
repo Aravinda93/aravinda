@@ -4,7 +4,7 @@
   >
     <!-- Title -->
     <h2
-      class="pb-8 text-4xl font-extrabold tracking-tight text-gray-800 dark:text-yellow-200 md:text-5xl lg:text-6xl transition-transform transform hover:scale-105"
+      class="pb-8 text-4xl font-extrabold tracking-tight text-gray-800 dark:text-yellow-200 transition-transform transform hover:scale-105"
     >
       Connect with Me
     </h2>

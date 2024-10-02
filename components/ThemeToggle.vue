@@ -4,8 +4,12 @@
     @click="changeColor"
     class="p-2 rounded-full transition duration-300 ease-in-out transform hover:scale-105 hover:ring-2 ring-gray-400 dark:ring-yellow-500 bg-transparent text-blue-900 dark:text-blue-100"
   >
+    {{ colorMode.preference }}
     <ColorScheme>
-      <Icon name="mdi:github" class="w-8 h-8" />
+      <Icon
+        :name="icon"
+        class="w-full h-full text-gray-700 dark:text-yellow-200 transition-colors duration-500"
+      />
 
       <Icon
         v-if="colorMode.value === 'light'"
@@ -24,6 +28,7 @@
 
 <script setup>
 const colorMode = useColorMode();
+
 const changeColor = () => {
   colorMode.preference = colorMode.value === "light" ? "dark" : "light";
 };

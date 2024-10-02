@@ -19,6 +19,10 @@ export default {
     fallback: "dark",
   },
 
+  router: {
+    base: "/aravinda/",
+  },
+
   // Favicon icon for the tab
   app: {
     baseURL: "/aravinda/",

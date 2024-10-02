@@ -1,12 +1,5 @@
 export default {
-  app: {
-    baseURL: "/aravinda/",
-    buildAssetsDir: "assets",
-  },
-  router: {
-    base: "/aravinda/",
-  },
-  ssr: true,
+  ssr: false,
   target: "static",
   compatibilityDate: "2024-10-01",
 
@@ -28,6 +21,7 @@ export default {
 
   // Favicon icon for the tab
   app: {
+    baseURL: "/aravinda/",
     head: {
       link: [
         {

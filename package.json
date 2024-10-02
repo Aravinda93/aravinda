@@ -8,7 +8,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "gh-pages --dotfiles -d .output/public"
+    "deploy": "gh-pages --dotfiles -d .output/public",
+    "clean": "rm -rf .nuxt .output node_modules package-lock.json .idea .vscode"
   },
   "devDependencies": {
     "@iconify-json/devicon": "^1.2.2",

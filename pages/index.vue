@@ -149,3 +149,9 @@
   <!-- Footer/Links Section-->
   <FooterSection />
 </template>
+
+<script setup>
+useHead({
+  title: "Aravinda | Home",
+});
+</script>

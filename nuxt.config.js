@@ -31,7 +31,7 @@ export default {
         {
           rel: "icon",
           type: "image/x-icon",
-          href: `/images/photo.jpg`,
+          href: `images/photo.jpg`,
         },
       ],
     },

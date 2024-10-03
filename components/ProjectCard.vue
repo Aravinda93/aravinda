@@ -23,9 +23,6 @@
 
     <!-- Technology Stack -->
     <div class="mb-6">
-      <h4 class="text-xl font-bold text-gray-800 dark:text-gray-200 mb-3">
-        Technology Stack
-      </h4>
       <div class="flex flex-wrap gap-3">
         <span
           v-for="(tech, index) in techStack"
@@ -55,6 +52,7 @@
     <div class="flex items-center justify-end space-x-4 space-y-4 mt-4">
       <!-- GitHub Link -->
       <a
+        v-if="githubLink"
         target="_blank"
         :href="githubLink"
         class="mt-4 flex items-center justify-center w-12 h-12 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-900 dark:text-white group hover:bg-gray-300 dark:hover:bg-gray-600 transition-transform transform hover:scale-110 hover:rotate-12"
@@ -63,6 +61,7 @@
       </a>
 
       <a
+        v-if="projectLink"
         :href="projectLink"
         target="_blank"
         class="inline-block text-lg font-semibold text-blue-500 dark:text-yellow-300 hover:underline hover:text-blue-700 dark:hover:text-yellow-400 transition-colors hover:scale-105 transform"
@@ -88,5 +87,6 @@ const projectInitials = computed(() =>
     .split(" ")
     .map((word) => word[0])
     .join("")
+    .substring(0, 3)
 );
 </script> 

@@ -89,7 +89,8 @@ const company5Tasks = ref([
   "Performed regular testing and maintenance to ensure smooth application functioning.",
   "Supported production deployments and conducted regression testing.",
 ]);
-</script>
 
-<style>
-</style>
+useHead({
+  title: "Aravinda | Home",
+});
+</script>

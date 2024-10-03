@@ -2,14 +2,9 @@
   <button
     aria-label="Toggle Color Mode"
     @click="changeColor"
-    class="p-2 rounded-full transition duration-300 ease-in-out transform hover:scale-105 hover:ring-2 ring-gray-400 dark:ring-yellow-500 bg-transparent text-blue-900 dark:text-blue-100"
+    class="p-2 rounded-full transition duration-300 ease-in-out transform hover:scale-105 ring-gray-400 dark:ring-yellow-500 bg-transparent text-blue-900 dark:text-blue-100"
   >
     <ColorScheme>
-      <Icon
-        :name="icon"
-        class="w-full h-full text-gray-700 dark:text-yellow-200 transition-colors duration-500"
-      />
-
       <Icon
         v-if="colorMode.value === 'light'"
         name="heroicons:moon-16-solid"

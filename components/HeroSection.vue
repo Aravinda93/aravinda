@@ -1,6 +1,6 @@
 <template>
   <section
-    class="hero bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900"
+    class="bg-gradient-to-r dark:from-yellow-800 dark:to-yellow-950 from-gray-400 to-gray-600"
   >
     <!-- Main content with Image and Title -->
     <div
@@ -13,7 +13,7 @@
         <h1 class="text-3xl md:text-5xl font-extrabold text-center">
           Hello!
           <span
-            class="block text-4xl md:text-6xl text-yellow-500 dark:text-yellow-300 transition-transform transform hover:scale-105"
+            class="block text-4xl md:text-6xl text-yellow-500 dark:text-yellow-300 transition-transform transform hover:scale-105 animate-pulse"
           >
             I'm Aravinda
           </span>
@@ -55,10 +55,3 @@
     </div>
   </section>
 </template>
-
-
-<style>
-.hero {
-  @apply bg-[url('images/hero-light.jpg')] dark:bg-[url('images/hero-dark.jpg')] w-full h-full;
-}
-</style>

@@ -6,7 +6,7 @@
     <h2
       class="pb-8 text-4xl font-extrabold tracking-tight text-gray-800 dark:text-yellow-200 transition-transform transform hover:scale-105"
     >
-      Connect with Me
+      Links
     </h2>
 
     <!-- Decorative Line -->

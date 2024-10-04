@@ -3,11 +3,12 @@
     class="bg-gray-200 dark:bg-gray-800 max-w-4xl w-full p-8 rounded-xl shadow-lg transition-all transform hover:scale-105 hover:shadow-2xl duration-500"
   >
     <div class="flex items-center mb-6 space-x-4">
-      <img
-        :src="companyLogo"
-        alt="Company Logo"
-        class="w-16 h-16 rounded-full shadow-lg"
-      />
+      <div
+        class="w-16 h-16 rounded-full shadow-lg bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center"
+      >
+        <span class="text-white text-2xl font-bold">{{ companyInitials }}</span>
+      </div>
+
       <div
         class="p-6 dark:bg-gray-800 rounded-lg shadow-md transition-transform transform hover:scale-105 duration-500"
       >
@@ -57,7 +58,7 @@
 <script setup>
 const props = defineProps({
   companyName: { type: String, required: true },
-  companyLogo: { type: String, required: true },
+  companyInitials: { type: String, required: true },
   duration: { type: String, required: true },
   city: { type: String, required: true },
   country: { type: String, required: true },

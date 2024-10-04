@@ -1,28 +1,21 @@
 <template>
   <div
-    class="group relative flex flex-col items-center justify-center p-6 rounded-xl bg-white/50 dark:bg-gray-900/50 backdrop-blur-lg shadow-lg dark:shadow-xl transition-transform duration-500 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:z-40 hover:text-red-500"
+    class="flex items-center space-x-2 bg-gray-100 dark:bg-gray-900 p-3 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:scale-105"
   >
-    <!-- Icon or empty div for spacing -->
-    <div v-if="icon" class="w-12 h-12">
+    <!-- Icon -->
+    <div v-if="icon" class="flex-shrink-0">
       <Icon
         :name="icon"
-        class="w-full h-full text-gray-700 dark:text-yellow-200 transition-colors duration-500"
+        class="w-6 h-6 text-gray-800 dark:text-gray-100 transition-all duration-150 hover:text-blue-500 dark:hover:text-blue-400 hover:scale-125"
       />
     </div>
-    <div v-else class="h-0"></div>
 
     <!-- Skill text -->
     <span
-      :class="icon ? 'mt-4' : ''"
-      class="text-center text-lg font-semibold text-gray-900 dark:text-yellow-100 transition-colors duration-500"
+      class="text-sm font-semibold text-gray-800 dark:text-yellow-200 transition-colors duration-500"
     >
       {{ text }}
     </span>
-
-    <!-- Gradient floating effect -->
-    <div
-      class="absolute inset-0 z-[-1] w-full h-full rounded-xl bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 opacity-0 group-hover:opacity-90 transition-opacity duration-700 blur-md"
-    />
   </div>
 </template>
 

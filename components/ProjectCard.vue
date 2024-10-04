@@ -5,7 +5,7 @@
     <!-- Project Name and Description -->
     <div class="flex items-center mb-6 space-x-4">
       <div
-        class="w-16 h-16 rounded-full shadow-lg bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 flex items-center justify-center"
+        class="w-16 h-16 rounded-full shadow-lg bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center"
       >
         <span class="text-white text-2xl font-bold">{{ projectInitials }}</span>
       </div>

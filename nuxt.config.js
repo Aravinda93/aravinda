@@ -1,5 +1,5 @@
 export default {
-  ssr: false,
+  ssr: true,
   target: "static",
   compatibilityDate: "2024-10-01",
 
@@ -9,7 +9,7 @@ export default {
     "@nuxt/icon",
     "@nuxtjs/i18n",
     "@nuxtjs/color-mode",
-    "@nuxtjs/turnstile",
+    "@nuxt/content",
   ],
 
   //To support the dark/light mode theme using @nuxtjs/color-mode
@@ -52,4 +52,9 @@ export default {
       pathPrefix: false,
     },
   ],
+
+  //To support and display the .md files from /content using @nuxt/content
+  content: {
+    documentDriven: true,
+  },
 };

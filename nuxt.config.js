@@ -1,5 +1,5 @@
 export default {
-  ssr: true,
+  ssr: false,
   target: "static",
   compatibilityDate: "2024-10-01",
 
@@ -52,9 +52,4 @@ export default {
       pathPrefix: false,
     },
   ],
-
-  //To support and display the .md files from /content using @nuxt/content
-  content: {
-    documentDriven: true,
-  },
 };

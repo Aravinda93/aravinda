@@ -1,5 +1,5 @@
 export default {
-  ssr: false,
+  ssr: true,
   target: "static",
   compatibilityDate: "2024-10-01",
 

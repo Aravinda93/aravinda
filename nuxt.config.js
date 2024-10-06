@@ -58,8 +58,8 @@ export default {
     langDir: "./locales",
     defaultLocale: "en",
     locales: [
-      { code: "en", iso: "en-US", files: ["en.json"] },
-      { code: "de", iso: "de-DE", files: ["de.json"] },
+      { code: "en", files: ["en.json"] },
+      { code: "de", files: ["de.json"] },
     ],
   },
 };

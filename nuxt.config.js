@@ -52,4 +52,14 @@ export default {
       pathPrefix: false,
     },
   ],
+
+  i18n: {
+    lazy: true,
+    langDir: "./locales",
+    defaultLocale: "en",
+    locales: [
+      { code: "en", iso: "en-US", files: ["en.json"] },
+      { code: "de", iso: "de-DE", files: ["de.json"] },
+    ],
+  },
 };

@@ -91,6 +91,6 @@ const company5Tasks = ref([
 ]);
 
 useHead({
-  title: "Aravinda | Home",
+  title: "Experience",
 });
 </script>

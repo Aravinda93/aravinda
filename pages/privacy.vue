@@ -18,6 +18,12 @@
   </div>
 </template>
 
+<script setup>
+useHead({
+  title: "Privacy",
+});
+</script>
+
 <style scoped>
 :deep(.prose a) {
   @apply text-blue-500 underline hover:text-blue-700;

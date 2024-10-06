@@ -129,6 +129,6 @@
 
 <script setup>
 useHead({
-  title: "Aravinda | Home",
+  title: "Home",
 });
 </script>
